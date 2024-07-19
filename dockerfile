@@ -1,4 +1,4 @@
-FROM apache
+FROM httpd
 
 WORKDIR /var/www/html/
 
@@ -6,4 +6,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["apache2","start"]
+CMD ["httpd","start"]
